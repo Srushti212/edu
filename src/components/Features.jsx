@@ -11,7 +11,7 @@ const Features = () => {
     ];
 
     return (
-        <section id="features" style={{ padding: '6rem 2rem' }}>
+        <section id="features" className="section-padding">
             <h2 className="section-title">Why Choose Us?</h2>
             <div style={{
                 display: 'grid',

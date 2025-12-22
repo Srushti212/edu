@@ -26,7 +26,7 @@ const Courses = () => {
     ];
 
     return (
-        <section id="courses" style={{ padding: '6rem 2rem', background: '#f8fafc' }}>
+        <section id="courses" className="section-padding" style={{ background: '#f8fafc' }}>
             <h2 className="section-title">Enriching Courses</h2>
             <div style={{
                 display: 'grid',

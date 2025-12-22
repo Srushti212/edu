@@ -7,12 +7,12 @@ const Hero = () => {
             flexDirection: 'column',
             alignItems: 'center',
             justifyContent: 'center',
-            padding: '6rem 2rem',
+            justifyContent: 'center',
             minHeight: '85vh',
             textAlign: 'center',
             position: 'relative',
             overflow: 'hidden'
-        }}>
+        }} className="section-padding">
             {/* Background Decorative Elements */}
             <div style={{
                 position: 'absolute',

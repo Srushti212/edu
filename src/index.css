@@ -91,3 +91,62 @@ ul {
   margin: 10px auto 0;
   border-radius: 2px;
 }
+
+/* Responsive Utilities */
+.section-padding {
+  padding: 6rem 2rem;
+}
+
+/* Mobile Menu Styles */
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.mobile-nav {
+  display: flex;
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 3rem 1rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .glass {
+    border-radius: 16px;
+  }
+
+  /* Header Mobile */
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .mobile-nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    /* Hidden by default */
+    width: 70%;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: right 0.3s ease-in-out;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .mobile-nav.open {
+    right: 0;
+  }
+}

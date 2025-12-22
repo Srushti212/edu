@@ -2,9 +2,8 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <footer id="contact" style={{
-            marginTop: '6rem',
-            padding: '5rem 2rem 2rem',
+        <footer id="contact" className="section-padding" style={{
+            marginTop: '0',
             background: 'linear-gradient(to top, #023E8A, #0077B6)',
             color: '#fff',
         }}>

@@ -22,7 +22,7 @@ const Gallery = () => {
     const prevSlide = () => setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
 
     return (
-        <section id="gallery" style={{ padding: '6rem 2rem', background: '#f0f9ff' }}>
+        <section id="gallery" className="section-padding" style={{ background: '#f0f9ff' }}>
             <h2 className="section-title">Our Gallery & Results</h2>
 
             <div className="glass" style={{
