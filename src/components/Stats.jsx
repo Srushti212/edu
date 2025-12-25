@@ -2,10 +2,10 @@ import React from 'react';
 
 const Stats = () => {
     const stats = [
-        { label: "Students Mentored", value: "2000+", icon: "👨‍🎓" },
-        { label: "Years of Excellence", value: "12+", icon: "⏳" },
-        { label: "Success Rate", value: "100%", icon: "📈" },
-        { label: "Expert Faculty", value: "50+", icon: "👩‍🏫" }
+        { label: "Faculties", value: "2", icon: "👨‍🏫" },
+        { label: "Batches", value: "6", icon: "📚" },
+        { label: "Support Hours", value: "24", icon: "🕒" },
+        { label: "Working Hours", value: "18", icon: "💼" }
     ];
 
     return (

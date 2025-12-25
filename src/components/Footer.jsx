@@ -17,7 +17,11 @@ const Footer = () => {
             }}>
                 <div>
                     <h3 style={{ fontSize: '1.8rem', marginBottom: '1.5rem', color: '#ADE8F4' }}>Apex Learning Hub</h3>
-                    <p style={{ opacity: 0.8, lineHeight: '1.8' }}>Empowering students to achieve their dreams through quality education and personalized guidance.</p>
+                    <p style={{ opacity: 0.8, lineHeight: '1.8', fontSize: '0.95rem' }}>
+                        We here try to nurture the knowledge of the child in curricular as well as extra coordination, we here respect the individuality of the child and hence every child is treated differently and personal care is provided to them.
+                        <br /><br />
+                        Every child is its own kind and one should respect that, every child is knowledgeable the only thing he requires is extra push, and we here try to do that because we know that studying is tough. But trust us not more than failure.
+                    </p>
                 </div>
 
                 <div>

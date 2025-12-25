@@ -7,6 +7,8 @@ import Features from './components/Features';
 import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
+import Team from './components/Team';
+import Enquiry from './components/Enquiry';
 
 import Gallery from './components/Gallery';
 
@@ -16,11 +18,13 @@ function App() {
       <Header />
       <main>
         <Hero />
-        <Stats />
-        <Gallery />
         <Courses />
-        <Features />
+        <Enquiry />
         <Testimonials />
+        <Team />
+        <Gallery />
+        <Features />
+        <Stats />
         <FAQ />
       </main>
       <Footer />

@@ -49,15 +49,33 @@ const Header = () => {
       {/* Navigation */}
       <nav className={`mobile-nav ${isMenuOpen ? 'open' : ''}`}>
         <ul style={{ display: 'flex', gap: '2rem', flexDirection: isMenuOpen ? 'column' : 'row', alignItems: 'center' }}>
-          {['Home', 'Courses', 'Features', 'FAQ', 'Contact'].map((item) => (
+          {['Home', 'About Us', 'Classes', 'Enquiry', 'Team', 'Contact Us'].map((item) => (
             <li key={item}>
               <a
-                href={`#${item.toLowerCase()}`}
-                onClick={() => setIsMenuOpen(false)}
-                style={{ fontWeight: '600', color: '#005f99', fontSize: isMenuOpen ? '1.2rem' : '1rem' }}
+                href={`#${item.toLowerCase().replace(' ', '-')}`}
+                onClick={(e) => {
+                  e.preventDefault();
+                  const id = item.toLowerCase().replace(' ', '-');
+                  // Map 'classes' to 'courses' if needed, or 'contact-us' to 'contact'
+                  let targetId = id;
+                  if (id === 'classes') targetId = 'courses';
+                  if (id === 'contact-us') targetId = 'contact';
+
+                  const element = document.getElementById(targetId);
+                  if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                  }
+                  setIsMenuOpen(false);
+                }}
+                style={{ fontWeight: '600', color: '#005f99', fontSize: isMenuOpen ? '1.2rem' : '1rem', cursor: 'pointer' }}
               >
                 {item}
               </a>
+            </li>
+          ))}
+          {['Register', 'Login', 'Notes'].map((item) => (
+            <li key={item}>
+              <a href="#" style={{ fontWeight: '600', color: '#005f99', fontSize: isMenuOpen ? '1.2rem' : '1rem' }}>{item}</a>
             </li>
           ))}
         </ul>

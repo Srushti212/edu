@@ -51,60 +51,18 @@ const Hero = () => {
                     color: '#1a3c59',
                     textShadow: '2px 2px 0px rgba(255,255,255,0.5)'
                 }}>
-                    APEX <span style={{ color: '#0077b6' }}>LEARNING</span> HUB
+                    Rapid Solutions for <span style={{ color: '#0077b6' }}>Your Education!</span>
                 </h1>
 
-                <p style={{
-                    fontSize: 'clamp(1.2rem, 2vw, 1.8rem)',
-                    fontStyle: 'italic',
-                    color: '#446',
-                    marginBottom: '3rem',
-                    fontWeight: '300'
-                }}>
-                    "Your Dream, Our Vision..."
-                </p>
-
-                <div className="glass" style={{
-                    padding: '2rem',
-                    marginBottom: '3rem',
-                    border: '1px solid rgba(255,255,255,0.6)',
-                    boxShadow: '0 20px 40px rgba(0,0,0,0.05)'
-                }}>
-                    <h3 style={{ color: '#005f99', marginBottom: '1rem', fontSize: '1.5rem' }}>Excellence in Education For</h3>
-                    <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
-                        {['1st - 5th', '6th - 10th', '11th & 12th', 'Science', 'Commerce'].map(tag => (
-                            <span key={tag} style={{
-                                background: '#e0f7fa',
-                                color: '#006064',
-                                padding: '0.5rem 1.5rem',
-                                borderRadius: '30px',
-                                fontWeight: '600',
-                                fontSize: '1.1rem'
-                            }}>{tag}</span>
-                        ))}
-                    </div>
-                    <p style={{ marginTop: '1rem', fontWeight: '500', color: '#555' }}>Boards: IGCSE, ICSE, CBSE, SSC & HSC</p>
-                </div>
-
-                <div style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+                <div style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center', flexWrap: 'wrap', marginTop: '2rem' }}>
                     <button className="btn"
-                        onClick={() => window.open('https://docs.google.com/forms/u/0/', '_blank')}
+                        onClick={() => document.getElementById('courses')?.scrollIntoView({ behavior: 'smooth' })}
                         style={{
                             fontSize: '1.3rem',
                             padding: '15px 40px',
                             boxShadow: '0 10px 20px rgba(255, 215, 0, 0.3)'
                         }}>
-                        Enroll Now
-                    </button>
-                    <button className="btn"
-                        onClick={() => document.getElementById('courses')?.scrollIntoView({ behavior: 'smooth' })}
-                        style={{
-                            background: 'transparent',
-                            color: '#005f99',
-                            border: '2px solid #005f99',
-                            boxShadow: 'none'
-                        }}>
-                        Explore Courses
+                        Get Started
                     </button>
                 </div>
             </div>
