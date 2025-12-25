@@ -60,6 +60,7 @@ const Header = () => {
                   let targetId = id;
                   if (id === 'classes') targetId = 'courses';
                   if (id === 'contact-us') targetId = 'contact';
+                  if (id === 'about-us') targetId = 'features';
 
                   const element = document.getElementById(targetId);
                   if (element) {
@@ -73,11 +74,7 @@ const Header = () => {
               </a>
             </li>
           ))}
-          {['Register', 'Login', 'Notes'].map((item) => (
-            <li key={item}>
-              <a href="#" style={{ fontWeight: '600', color: '#005f99', fontSize: isMenuOpen ? '1.2rem' : '1rem' }}>{item}</a>
-            </li>
-          ))}
+
         </ul>
         {isMenuOpen && (
           <button className="btn"
@@ -85,7 +82,7 @@ const Header = () => {
               document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
               setIsMenuOpen(false);
             }}
-            style={{ marginTop: '1rem' }}
+            style={{ marginTop: '1rem', fontSize: '0.9rem', padding: '10px 25px' }}
           >
             Enquire Now
           </button>

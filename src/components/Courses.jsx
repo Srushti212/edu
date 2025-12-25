@@ -5,42 +5,42 @@ const Courses = () => {
         {
             name: "5th Class",
             boards: "CBSE, ICSE and SSC(Maharashtra) Board",
-            desc: "Batches are negotiable with parents and their ward availibility and sutability."
+
         },
         {
             name: "6th Class",
             boards: "CBSE, ICSE and SSC(Maharashtra) Board",
-            desc: "Batches are negotiable with parents and their ward availibility and sutability."
+
         },
         {
             name: "7th Class",
             boards: "CBSE, ICSE and SSC(Maharashtra) Board",
-            desc: "Batches are negotiable with parents and their ward availibility and sutability."
+
         },
         {
             name: "8th Class",
             boards: "CBSE, ICSE and SSC(Maharashtra) Board",
-            desc: "Batches are negotiable with parents and their ward availibility and sutability."
+
         },
         {
             name: "9th Class",
             boards: "CBSE, ICSE and SSC(Maharashtra) Board",
-            desc: "Batches are negotiable with parents and their ward availibility and sutability."
+
         },
         {
             name: "10th Class",
             boards: "CBSE, ICSE and SSC(Maharashtra) Board",
-            desc: "Batches are negotiable with parents and their ward availibility and sutability."
+
         },
         {
             name: "11th Class",
             boards: "CBSE and HSC(Maharashtra) Board",
-            desc: "Batches are negotiable with parents and their ward availibility and sutability."
+
         },
         {
             name: "12th Class",
             boards: "CBSE and HSC(Maharashtra) Board",
-            desc: "Batches are negotiable with parents and their ward availibility and sutability."
+
         },
     ];
 
@@ -82,9 +82,7 @@ const Courses = () => {
                                 <strong style={{ color: '#0077B6', display: 'block', marginBottom: '0.5rem' }}>We conduct:</strong>
                                 <span style={{ color: '#555' }}>{cls.boards}</span>
                             </div>
-                            <p style={{ fontSize: '0.95rem', color: '#666', fontStyle: 'italic' }}>
-                                {cls.desc}
-                            </p>
+
                         </div>
                     ))}
                 </div>
