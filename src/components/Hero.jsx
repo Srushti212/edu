@@ -1,4 +1,4 @@
-import React from 'react';
+import heroBg from '../assets/hero-bg.png';
 
 const Hero = () => {
     return (
@@ -7,26 +7,17 @@ const Hero = () => {
             flexDirection: 'column',
             alignItems: 'center',
             justifyContent: 'center',
-            justifyContent: 'center',
             minHeight: '85vh',
             textAlign: 'center',
             position: 'relative',
-            overflow: 'hidden'
+            overflow: 'hidden',
+            backgroundImage: `url(${heroBg})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center 40%',
         }} className="section-padding">
-            {/* Background Decorative Elements */}
-            <div style={{
-                position: 'absolute',
-                top: '-10%',
-                left: '-10%',
-                width: '50vw',
-                height: '50vw',
-                background: 'radial-gradient(circle, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0) 70%)',
-                borderRadius: '50%',
-                zIndex: 0,
-                pointerEvents: 'none'
-            }} />
 
-            <div style={{ zIndex: 2, maxWidth: '900px' }}>
+
+            <div style={{ zIndex: 2, maxWidth: '900px', position: 'relative' }}>
                 <h2 style={{
                     fontSize: '1.1rem',
                     color: '#005f99',

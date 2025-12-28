@@ -5,6 +5,7 @@ import Stats from './components/Stats';
 import Courses from './components/Courses';
 import Features from './components/Features';
 import Testimonials from './components/Testimonials';
+import StudentResults from './components/StudentResults';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 import Team from './components/Team';
@@ -21,6 +22,7 @@ function App() {
         <Courses />
         <Enquiry />
         <Testimonials />
+        <StudentResults />
         <Team />
         <Gallery />
         <Features />
